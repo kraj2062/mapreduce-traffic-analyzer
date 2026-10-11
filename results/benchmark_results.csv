@@ -1,0 +1,4 @@
+Dataset Size,Output Groups,Processing Time (seconds),Throughput (records/second)
+1000,144,0.0731,13688.3
+10000,144,0.6459,15481.54
+100000,144,7.7005,12986.12
