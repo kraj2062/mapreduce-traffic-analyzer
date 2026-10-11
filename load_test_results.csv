@@ -1,0 +1,4 @@
+Workload,Concurrent Workers,Total Requests,Successful Requests,Total Time (seconds),Average Latency (ms)
+Low,5,50,50,0.1536,14.68
+Medium,20,50,50,0.1609,50.09
+High,50,50,50,0.2198,66.37

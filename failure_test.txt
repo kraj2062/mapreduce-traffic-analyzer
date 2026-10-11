@@ -1,0 +1,22 @@
+MapReduce Traffic Analyzer
+Failure Handling Test Report
+
+Test 1: Invalid traffic upload
+Input: An upload containing record_id and location only.
+Expected behavior: Reject the incomplete record.
+Observed HTTP status: 400
+Observed response: Missing required traffic columns
+
+Test 2: Recovery health check
+Action: Call the /health endpoint after the rejected upload.
+Observed HTTP status: 200
+Observed response: status=healthy, service=Traffic Analyzer
+
+Conclusion:
+The invalid upload was rejected, and the health endpoint
+remained available after the failed request.
+
+Note:
+This test demonstrates input validation and a subsequent
+health check. It does not establish recovery from a server
+crash or database failure.
